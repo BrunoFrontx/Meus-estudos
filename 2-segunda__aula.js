@@ -115,7 +115,6 @@ function escreve__nome (nome){
     console.log(aplicar__juros(preço_etiqueta , 10)) // Aqui funciona igual o primeiro exemplo so que com juros, porem a forma de parametro é a mesma
  }
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 //Bons estudos
 
 
