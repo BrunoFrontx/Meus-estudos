@@ -93,3 +93,6 @@ console.log(minha__moto);
   const  car__meu = new Car (`BMW`, `VERMELHO`, 1/4);
 
 console.log(car__meu.calcula__gasto(10 , 5)) ; 
+
+
+//Bons estudos

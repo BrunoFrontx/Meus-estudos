@@ -102,3 +102,5 @@ for(i = 0; i < numero_par.length; i++){
 // voce pode ir em inperção e adicionar qual variavel voce quer observa digitando o nome dela
 // vai aparecer um painel de controle no meio da tela, voce pode clicar na primeria opção que execultara todo seu codigo de uma so vez
 // ou na seta que esta na em sentido destro , clicando la vai debugando linha por linha
+
+//Bons estudos
