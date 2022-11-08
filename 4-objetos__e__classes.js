@@ -4,12 +4,12 @@
 
 //sintaxe
 
-const Pessoa = {   //Aqui é a sintaxe de um objeto, o nome desse objeto, corresponde com as caracteristicas que ele vai agrupar 
-    nome :`Bruno`,
-    idade : 22 ,
-};
+// const Pessoa = {   //Aqui é a sintaxe de um objeto, o nome desse objeto, corresponde com as caracteristicas que ele vai agrupar 
+//     nome :`Bruno`,
+//     idade : 22 ,
+// };
  
-console.log(Pessoa.nome) //sintaxe de chamada 
+// console.log(Pessoa.nome) //sintaxe de chamada 
 
 // Podemos tambem criar funções atreladas a esse objetos, e o nome dado a essa operação é metodos.
 
@@ -93,6 +93,45 @@ console.log(minha__moto);
   const  car__meu = new Car (`BMW`, `VERMELHO`, 1/4);
 
 console.log(car__meu.calcula__gasto(10 , 5)) ; 
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------
+ // Desafio calculando imc de uma pessoa com objetos: algo tirado da cabeça os valores da classificação do imc nao estao coerentes
+
+  class Pessoa {
+      nome_pessoa;
+      peso_pessoa;
+      altura_pessoa;
+
+      constructor(pessoa_nome , pessoa_peso, pessoa_altura){ // constructor nele adicionamos parametros, que são variaveis que sera armazenada algum valor na frente
+        this.nome_pessoa = pessoa_nome     // aqui estou chamando a propriedade do  objeto e armazenando dentro dele o valor que a variavel do constructor recebera como parametro
+        this.peso_pessoa = pessoa_peso   // o exemplo acima serve mesma forma  
+        this.altura_pessoa = pessoa_altura  // o exemplo acima serve mesma forma 
+         
+      }
+
+       calcular_imc () {
+        return this.peso_pessoa/(this.altura_pessoa * this.altura_pessoa);
+       }
+       classificar_imc(){
+        const imc_pessoa = this.calcular_imc()
+        if( imc_pessoa <= 18.75){
+            return ('Voce esta desnutrido')
+        }
+        else if ( imc_pessoa === 22 && imc_pessoa <= 30 ){
+            return  ('Voce esta normal')
+        }
+         else{
+            return (' Voce esta obeso')
+         }
+         
+       }
+   
+       
+  }
+
+  const Bruno = new Pessoa ("Bruno" , 30 , 1.8)  // os valores armazenado aqui ficam na variavel do parametro do constructor , e esses valores sao armazendos dentro
+    
+console.log(Bruno.classificar_imc())
 
 
 //Bons estudos
